@@ -1,0 +1,35 @@
+{
+  "name": "execr",
+  "version": "1.0.0",
+  "description": "cross platform exec",
+  "main": "index.js",
+  "scripts": {
+    "hint": "jshint *.js",
+    "lint": "npm run hint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsu-complete/node-execr.git"
+  },
+  "keywords": [
+    "cross",
+    "platform",
+    "exec"
+  ],
+  "author": "tsukumo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsu-complete/node-execr/issues"
+  },
+  "homepage": "https://github.com/tsu-complete/node-execr#readme",
+  "bin": {
+    "execr": "runner.js"
+  },
+  "devDependencies": {
+    "jshint": "^2.8.0"
+  },
+  "dependencies": {
+    "node-getopt": "^0.2.3"
+  }
+}
