@@ -47,7 +47,7 @@ $ execr -- echo hello world
 $ execr echo hello world
 $ execr echo "hello world"
 $ execr "echo hello world"
-$ execr "echo \"hello world\"
+$ execr "echo \"hello world\""
 $ execr -- "echo hello world"
 $ execr echo -- hello world
 $ execr -- ls -AlhG
@@ -56,10 +56,13 @@ $ execr -- ls -AlhG
 If it is a single command consider using the file flag
 to denote this.  The change is purely for efficiency.
 
+Do:
 ```sh
--do
 $ execr -f -- ls
--dont
+```
+
+Don't:
+```sh
 $ execr -f -- ls | grep package
 ```
 
