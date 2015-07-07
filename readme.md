@@ -69,7 +69,7 @@ $ execr -f -- ls | grep package
 > NOTE: this may appear to work correctly but consider
 >       that it will be evaluated `{execr -f -- ls} | grep package`
 >       to prevent this use `execr -f -- "ls | grep package"`
->       which will not error due to incorrect usage of the file flag
+>       which will now error due to incorrect usage of the file flag
 
 Show output with verbose mode
 
