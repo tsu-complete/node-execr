@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 
 (function ( getopt, execr ) {
     "use strict";
