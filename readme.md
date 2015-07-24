@@ -2,6 +2,8 @@
 execr
 ===
 
+[![Codacy Badge](https://www.codacy.com/project/badge/3d23c3bb4b064025a527c9898049d207)](https://www.codacy.com/app/tsu-complete/node-execr)
+
 > cross platform exec
 
 Reason
