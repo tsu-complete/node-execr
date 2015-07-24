@@ -3,6 +3,8 @@ execr
 ===
 
 [![Codacy Badge](https://www.codacy.com/project/badge/3d23c3bb4b064025a527c9898049d207)](https://www.codacy.com/app/tsu-complete/node-execr)
+[![Dependencies](https://david-dm.org/tsu-complete/node-execr.svg)](https://david-dm.org/tsu-complete/node-execr)
+[![Dev Dependencies](https://david-dm.org/tsu-complete/node-execr/dev-status.svg)](https://david-dm.org/tsu-complete/node-execr#info=devDependencies)
 
 > cross platform exec
 
