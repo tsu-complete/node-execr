@@ -1,5 +1,5 @@
 
-(function ( cp ) {
+;(function ( cp ) {
     "use strict";
 
     var execr, extend;
@@ -54,13 +54,15 @@
         }
 
         for (key in process.env) {
-            if (!(pregex.test(command) && sufgex.test(command))) {
-                break; // exit early for efficiency
+            if (process.env.hasOwnProperty(key)) {
+                if (!(pregex.test(command) && sufgex.test(command))) {
+                    break; // exit early for efficiency
+                }
+                command = command.replace(
+                    new RegExp(options.prefix + key + options.suffix, "gi")
+                ,   process.env[key]
+                );
             }
-            command = command.replace(
-                new RegExp(options.prefix + key + options.suffix, "gi")
-            ,   process.env[key]
-            );
         }
 
         callback = function ( error, stdout, stderr ) {
